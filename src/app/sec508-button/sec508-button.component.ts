@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'sec508-button',
@@ -10,6 +10,8 @@ export class Sec508ButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+
   }
 
 }
