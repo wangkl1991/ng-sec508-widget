@@ -1,0 +1,26 @@
+
+<div class="combobox-list">
+  <label for="cb1-input">
+    Search
+  </label>
+  <div class="group">
+    <input id="cb1-input" class="cb_edit" type="text" role="combobox" aria-autocomplete="none" aria-expanded="false" aria-haspopup="true"
+      aria-owns="cb1-listbox">
+    <button id="cb1-button" tabindex="-1" aria-label="Open" (click) = "buttonClick($event)">
+      
+            ▽
+          
+    </button>
+
+  </div>
+  <ul id="cb1-listbox" role="listbox" aria-label="Previous Searches" *ngFor="let item of listSource; let i = 'index'" [ngStyle] = "{'visibility' : isPressed? 'visible': 'hidden'}">
+    <li role="option" id="list{{i}}">
+      {{item}}
+    </li>
+
+    <!-- <li id="lb1-01" role="option">
+      weather
+    </li> -->
+
+  </ul>
+</div>
