@@ -13,8 +13,8 @@
     </button>
 
   </div>
-  <ul id="cb1-listbox" role="listbox" aria-label="Previous Searches" *ngFor="let item of listSource; let i = 'index'" [ngStyle] = "{'visibility' : isPressed? 'visible': 'hidden'}">
-    <li role="option" id="list{{i}}">
+  <ul id="cb1-listbox" role="listbox" aria-label="Previous Searches"  [ngStyle] = "{'visibility' : isPressed? 'visible': 'hidden'}">
+    <li *ngFor="let item of listSource; let i = 'index'" role="option" id="list{{i}}" >
       {{item}}
     </li>
 
@@ -24,3 +24,4 @@
 
   </ul>
 </div>
+ 

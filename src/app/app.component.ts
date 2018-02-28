@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- testList= ["wkl", "zty", "609"]
+ testList= ["wkl", "zty", "609"];
+ testDropdown = ['wkl', 'zty', '609'];
 }
