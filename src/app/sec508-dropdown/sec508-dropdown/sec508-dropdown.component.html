@@ -8,7 +8,7 @@
     </span>
     <div id="exp_wrapper">
       <button aria-haspopup="listbox" aria-labelledby="exp_elem exp_button" id="exp_button" (click)="buttonClick($event)">
-        Neptunium
+        {{dropdownSource[0]}}
       </button>
       <ul id="exp_elem_list" tabindex="-1" role="listbox" aria-labelledby="exp_elem" [ngStyle]="{'visibility' : isPressed? 'visible': 'hidden'}">
 
