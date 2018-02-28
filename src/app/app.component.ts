@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  testList= ["wkl", "zty", "609"];
- testDropdown = ['wkl', 'zty', '609'];
+  testDropdown = ['wkl', 'zty', '609'];
 }

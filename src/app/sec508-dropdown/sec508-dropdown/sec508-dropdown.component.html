@@ -7,17 +7,11 @@
       Choose an element:
     </span>
     <div id="exp_wrapper">
-      <button aria-haspopup="listbox" aria-labelledby="exp_elem exp_button" id="exp_button" (click)="buttonClick($event)">
-        {{dropdownSource[0]}}
+      <button aria-haspopup="listbox" aria-labelledby="exp_elem exp_button" id="exp_button" aria-expanded="false" (click)="buttonClick($event)">
+        {{selectEle}}
       </button>
-      <ul id="exp_elem_list" tabindex="-1" role="listbox" aria-labelledby="exp_elem" [ngStyle]="{'visibility' : isPressed? 'visible': 'hidden'}">
-
-
-        <!-- <li id="exp_elem_Np" role="option">
-          Neptunium
-        </li> -->
-
-        <li *ngFor="let ele of dropdownSource; let i = 'index'" role="option" id="ele{{i}}">{{ele}} </li>
+      <ul id="exp_elem_list" tabindex="-1" role="listbox" aria-labelledby="exp_elem" [ngStyle]="{'visibility' : isPressed? 'visible': 'hidden'}" (keypress) ="keyOperation($event)">
+        <li *ngFor="let ele of dropdownSource; let i = 'index'" role="option" id="ele{{i}}" appListelement (click)="listClick($event)">{{ele}} </li>
 
       </ul>
     </div>
