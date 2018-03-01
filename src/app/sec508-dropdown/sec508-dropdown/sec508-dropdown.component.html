@@ -1,8 +1,4 @@
-<p>
-  Choose your favorite transuranic element (actinide or transactinide).
-</p>
-<div class="listbox-area">
-  <div class="left-area">
+
     <span id="exp_elem">
       Choose an element:
     </span>
@@ -11,9 +7,6 @@
         {{selectEle}}
       </button>
       <ul id="exp_elem_list" tabindex="-1" role="listbox" aria-labelledby="exp_elem" [ngStyle]="{'visibility' : isPressed? 'visible': 'hidden'}" (keypress) ="keyOperation($event)">
-        <li *ngFor="let ele of dropdownSource; let i = 'index'" role="option" id="ele{{i}}" appListelement (click)="listClick($event)">{{ele}} </li>
-
+        <li *ngFor="let ele of dropdownSource; let i = 'index'" role="option" id="ele{{i}}" appListelement (click)="listClick($event)">{{ele}}</li>
       </ul>
     </div>
-  </div>
-</div>

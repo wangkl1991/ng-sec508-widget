@@ -29,6 +29,9 @@ export class Sec508DropdownComponent implements OnInit {
   listClick(e){
     console.log(e);
     this.selectEle = e.target.innerHTML;
+    //e.target.style.background = "yellow"
+    
+    
   }
   keyOperation(e){
     console.log(e);

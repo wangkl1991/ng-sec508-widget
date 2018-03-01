@@ -3,14 +3,14 @@
 	color: #366ED4;
 }
 
-.listbox-area {
+/* .listbox-area {
 	padding: 20px;
 	background: #eee;
 	border: 1px solid #aaa;
 	font-size: 0px;
-}
+} */
 
-.left-area, .right-area {
+/* .left-area, .right-area {
 	box-sizing: border-box;
 	display: inline-block;
 	font-size: 14px;
@@ -24,6 +24,10 @@
 
 .right-area {
 	padding-left: 10px;
+} */
+
+#exp_elem_list li a:active {
+	background-color: yellow
 }
 
 [role="listbox"] {
